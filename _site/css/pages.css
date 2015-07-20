@@ -1,0 +1,500 @@
+/* ==========================================================================
+    Index.html
+   ========================================================================== */
+
+/* Carousel
+   ========================================================================== */    
+
+#index-carousel {
+    border-bottom:3px solid black;
+}
+
+    #index-carousel h1 {
+        font-size:3.4em;
+    }
+
+    #index-carousel hr {
+        width:50%;
+    }
+
+    #index-carousel #item-1 a:hover,
+    #index-carousel #item-2 a:hover  {
+        text-decoration:underline;
+        color:orange;
+    }
+
+    #index-carousel .fa, #index-carousel .glyphicon {
+        color:orange;
+    } 
+
+#carousel-container {
+    display:table; 
+    height:580px;
+    color:white;
+}
+
+#item-1 {
+    width:100%; 
+    background: url('../img/office-photo.jpg'); 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/office-photo.jpg');     
+    background-size:auto 100%;
+    background-repeat:no-repeat; 
+    background-position:center center;
+}
+
+.align-middle {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#item-2 {
+    background: url('../img/black-wallpaper.jpg'); 
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('../img/black-wallpaper.jpg'); 
+    padding-bottom:110px;
+    padding-top:30px;
+    color:white;
+}
+
+    #item-1 p, #item-2 p {
+        font-size:1.4em;
+    }
+
+#item-3 {
+    background: url('../img/moving-couch.jpg'); 
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/moving-couch.jpg'); 
+    background-size:100% 100%; 
+    background-repeat:no-repeat; 
+    color:white;
+}
+
+    #item-3 p {
+        font-size:1.2em; 
+        width:70%; 
+        margin:0 auto;
+    }
+
+ul#portfolio-list li {
+    float:left; 
+    padding:0px;
+}
+
+    ul#portfolio-list li:hover {
+        outline:2px solid white;
+    }
+
+    ul#portfolio-list img {
+        height:220px;  
+        padding:2px; 
+        width:100%;
+    }
+
+/* MCI Contact Modal
+   ========================================================================== */   
+
+#mciModal .modal-content {
+    background-image:url('../img/tan-bg.png');
+}
+
+    #mciModal p {
+        font-size:1.7em;
+    }
+
+/* Main Content
+   ========================================================================== */ 
+
+#intro {
+    padding:50px 0px 50px 0px;
+    clear:both;
+    background-image: url('../img/tan-texture-bg.jpg');
+}
+
+#services-container {
+    height:300px; 
+    background-color:orange; 
+    color:white;
+}
+
+h2.services-title {
+    font-size:2.6em; 
+    text-shadow:-2px -2px 0 silver, 2px -2px 0 silver, -2px 2px 0 silver, 2px 2px 0 silver;
+}
+
+#services .glyphicon {
+    font-size:3em; 
+    -ms-transform: rotate(78deg); /* IE 9 */
+    -webkit-transform: rotate(78deg); /* Chrome, Safari, Opera */
+    transform: rotate(78deg);
+}
+
+#services-bar-container {
+    background:url('../img/black-wallpaper.jpg');
+    width:100%;
+    display:table;
+}
+
+ul#services-buttons li {
+    padding-top:7px;
+    padding-bottom:7px;
+    width:14.2857%;
+    display:table-cell;
+    vertical-align:top;
+}
+
+    #services-buttons li p {
+        color:white; 
+        padding-top:5px;
+    }
+
+#process-section {
+    background-image: url('../img/tan-fade-bg.png');
+    background-size:100% 100%;
+    padding-bottom:60px;
+}
+
+#process-title {
+    font-size:2.3em; 
+    padding:50px 0px 30px 0px;
+}
+
+.process-text {
+    font-size:1.1em;
+    padding-top:30px;
+}
+
+table#process {
+    border-collapse:separate;
+    margin-bottom:35px;
+}
+
+table#process td {
+    height:110px; 
+    width:11%;
+    border-radius:50%;
+    border:2px solid tan;
+    box-shadow:10px 10px #303030;
+}
+
+    table#process td:nth-child(-n+4) {
+        background-color:#ff8c00; 
+    }
+
+    table#process td:nth-child(n+5):nth-child(-n+8) {
+        background-color:orange;
+    }
+
+    table#process td:last-child {
+        background-color:tan; 
+    }
+
+.testimonial {
+    border:black 3px solid; 
+    box-shadow: 0px 32px 20px -20px black; 
+    border-radius:25px; 
+    background: black; 
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)); 
+    padding-top:20px; 
+    padding-bottom:20px; 
+    color:white;
+}
+
+    .testimonial .glyphicon {
+        font-size:2em;
+    }
+
+    .testimonial blockquote {
+        padding:5px 10px;
+    }
+
+/* Media Queries
+   ========================================================================== */    
+
+@media screen and (max-width: 991px) {
+    
+    #carousel-container {
+        height:480px;
+    }
+
+    #item-2 .container {
+        width:100%;
+    }
+
+    ul#portfolio-list img {
+        height:170px;  
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .align-middle {
+        display:block;
+    }
+
+    #item-1 ul li {
+        float:left;
+        width:50%;
+        text-align:center;
+    }
+
+    #item-3 p {
+        font-size:1.2em; 
+        width:90%; 
+        margin:0 auto;
+    }
+
+    #services-bar-container {
+        display:block;
+        border-bottom:3px solid white; 
+    }
+
+    ul#services-buttons li {
+        width:33%;
+        float:left;
+        display:inline-block;
+    }
+
+    .testimonial {
+        margin-bottom:20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    
+    #item-3 {
+        background-size:auto 100%; 
+    }  
+        /* fixes firefox bug with class img-responsive */
+        #item-3 img {
+            width:100%;
+            max-width:461px;
+        } 
+}
+
+/* ==========================================================================
+    about.php
+   ========================================================================== */
+
+.matt {
+    display:table; 
+    margin:30px auto 0px auto;
+}
+
+    .matt img {
+        width:90%;
+        min-width:70px; 
+        border:2px solid black; 
+        max-width:130px;
+    }
+
+#matt-resume-head {
+    max-width:265px;
+}
+
+    #matt-resume-head a:hover {
+        color:orange;
+        text-decoration:underline;
+    }
+
+    #matt-resume-head li:nth-child(1) {
+        font-size:1.3em;
+    }
+
+    #matt-resume-head li:nth-child(2) {
+        font-size:1.1em;
+    }
+
+    #matt-resume-head li:nth-child(n+3):nth-child(-n+6) {
+        float:left;
+        width:50%;
+    }
+
+#resume {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.skills ul {
+    float:left; 
+    width:50%;
+}
+
+#hobbies li {
+    float:left; 
+    width:33.333%
+}
+
+#work-experience {
+    display:none;
+}
+
+@media screen and (max-width: 767px) {
+
+    #resume {
+        display:block;
+    }
+}
+
+/* ==========================================================================
+    Services Pages
+   ========================================================================== */
+
+.services-template {
+    /* Make shorter pages take up whole viewport*/
+    min-height: calc(100vh - 400px);
+}
+
+#services .title {
+    border-bottom:2px solid black;
+}
+
+#services li {
+    padding:3px 10px;
+    font-weight:bold;
+}
+
+    #services li.active {
+        background-color:orange;
+        color:white;
+    }
+
+    ul.analytics li {
+        width:50%;
+        float:left;
+        padding-bottom:5px;
+    }
+
+.copywriting img {
+    box-shadow:7px 7px 17px; 
+    border:1px solid gray
+}
+
+@media screen and (max-width: 400px) {
+
+    ul.analytics li {
+        width:100%;
+    }
+}
+
+/* ==========================================================================
+    Portfolio Page
+   ========================================================================== */
+.bg {
+    background-color:tan;
+}
+
+#portfolio-jumbo {
+    background-image:url('../img/work-desk.jpg');
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    max-width:1800px;
+    margin:0 auto;
+    border-bottom:3px solid black;
+}
+
+.jumbo-wrapper {
+    border:2px solid black; 
+    background: rgba(0, 0, 0, 0.5);
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* For Safari 5.1 to 6.0 */; 
+    padding:5px 0px; 
+    border-radius:30px;
+    color:white;
+}
+
+.jumbo-wrapper .h1 {
+    text-shadow: 3px 3px black;
+}
+
+.jumbo-wrapper p {
+    font-size:25px; 
+    text-shadow: 2px 2px black;
+}
+
+.tan-bg {
+    background:url('../img/tan-bg.png'); 
+    background:linear-gradient(rgba(210, 180, 140, 0.3), rgba(210, 180, 140, 0.3)), url('../img/tan-bg.png'); 
+    padding:50px 0px;
+    border-bottom:7px tan solid;
+}
+
+.orange-bg {
+    background: linear-gradient(rgba(255, 153, 0, 0.3), rgba(255, 153, 0, 0.3)), url('../img/tan-bg.png'); 
+    padding:50px 0px;
+}
+
+    .tan-bg a, .orange-bg a {
+        text-decoration:underline; 
+        color:#5C5C5C;
+    }
+
+    .tan-bg img, .orange-bg img {
+        margin-top:15px;
+        max-height:335px;
+    }
+
+.portfolio-titles {
+    text-shadow: 2px 2px 0px tan, 3px 3px 0px #707070; 
+}
+
+@media screen and (max-width: 475px) {
+    
+    #portfolio-jumbo {
+        background-size:100% 100%;
+    } 
+}
+
+/* ==========================================================================
+    Individual Portfolio Pages
+   ========================================================================== */
+
+ul#services-provided li {
+    width:50%;
+    float:left;
+}
+
+.folio-pages a {
+        text-decoration:underline; 
+        color:#5C5C5C;
+    }
+
+#folio-img-container {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#folio-main-img {
+    box-shadow: 0 22px 12px -12px black;
+    width:100%;
+}
+
+#info-box {
+    padding:15px; 
+    box-shadow: 0 26px 12px -12px #a89070; 
+    background-color:#dbc3a3;
+    border:1px solid #a89070;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    #folio-img-container {
+        display:block;
+        margin:15px auto 0px auto;
+        max-width:580px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    ul#services-provided li {
+        width:100%;
+    }
+}
+
+/* ==========================================================================
+    Message Confirmation
+   ========================================================================== */
+   
+.confirmation-body {
+    /* Make shorter pages take up whole viewport*/
+    min-height: calc(100vh - 400px);
+}

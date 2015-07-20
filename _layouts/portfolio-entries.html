@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="main-content p-vert-50 folio-pages">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 no-float" style="display:table-cell;">
+				<p class="h1">{{ page.name }}</p>
+				{% if page.site_url != null %} 
+
+				<p><a href="{{ page.link }}" target="_blank">{{ page.site_url }}</a></p> 
+
+				{% endif %}				
+				<div class="clearfix">
+					<ul id="services-provided">
+					{% for service in page.services %}
+						
+						<li><span class="glyphicon glyphicon-ok-sign"></span> {{ service }}</li>
+					
+					{% endfor %}
+					</ul>
+				</div>
+				<hr>
+				{{ content }}
+				<img src="{{ page.img_src }}" class="hidden-xs hidden-sm col-md-12 img-responsive center-block p-top-15">
+			</div>
+			<div class="col-sm-6 no-float" id="folio-img-container">
+				<img src="{{ page.img2_src }}" id="folio-main-img" class="img-responsive center-block">
+			</div>
+		</div>
+		<!-- If additional content exists include below, If not then end content !-->
+		{% if page.img3_src != null %} 
+
+		<hr class="hidden-xs hidden-sm">
+		<div class="row hidden-xs hidden-sm">
+			<div class="col-sm-6 no-float vert-middle">
+				<img src="{{ page.img3_src }}" class="col-xs-12 img-responsive center-block p-top-15">
+			</div>
+			<div class="col-sm-6 no-float vert-middle">
+				<div class="text-center" id="info-box">
+					{{ page.description_2 }}
+				</div>
+			</div>
+		</div>
+
+		{% endif %}				
+	</div>
+</section>

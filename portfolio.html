@@ -1,0 +1,120 @@
+---
+layout: default
+title: Portfolio | Web Design | Marketing
+---
+
+<div class="bg">
+	<div class="jumbotron text-center" id="portfolio-jumbo">
+		<div class="container">
+			<div class="jumbo-wrapper">
+				<p class="h1"><b>View My Latest Work</b></p>
+				<hr>
+				<p class="hidden-xs"><b>Big or small projects. Responsive, static, simple, or complex websites.</b></p>
+				<p class="hidden-xs"><b>You name it, I can help.</b></p>
+				<a href="#websites"><button class="button orange-button">Websites</button></a>
+				<a href="#dbms"><button class="button orange-button">DBMS</button></a>
+				<a href="#copywriting"><button class="button orange-button">Copywriting</button></a>
+			</div>
+		</div>
+	</div>
+	<section class="tan-bg">
+		<div class="container">
+			<p class="text-center h1 portfolio-titles" id="websites">Responsive Websites</p>
+			{% for post in site.categories.responsive-sites %}
+  				{% assign loopindex = forloop.index | modulo: 2 %}
+  				{% if loopindex == 1 %}
+
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}"> {{ post.name }} </a></p>
+					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+
+			{% else %}
+
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}"> {{ post.name }} </a></p>
+					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+			</div>
+
+  			{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	<section class="orange-bg" style="border-bottom:7px solid tan">
+		<div class="container">
+			<p class="text-center h1 portfolio-titles">More Websites</p>
+			{% for post in site.categories.websites %}
+  				{% assign loopindex = forloop.index | modulo: 2 %}
+  				{% if loopindex == 1 %}
+				
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}"> {{ post.name }} </a></p>
+					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+				
+			{% else %}
+
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}"> {{ post.name }} </a></p>
+					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+			</div>
+  
+  			{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	<section class="tan-bg">
+		<div class="container">
+			<p class="text-center h1 portfolio-titles" id="dbms">Database Management</p>
+			{% for post in site.categories.database-management %}
+  				{% assign loopindex = forloop.index | modulo: 2 %}
+  				{% if loopindex == 1 %}
+  			
+  			<div class="row">
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}">{{ post.name }}</a></p>
+					<p>{{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+
+			{% else %}
+
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
+					<p class="h3 text-center"><a href="{{ post.url }}">{{ post.name }}</a></p>
+					<p>{{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+			</div>
+			
+			{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	<section class="orange-bg">
+		<div class="container">
+			<div class="row copywriting">
+				<p class="text-center h1 portfolio-titles" id="copywriting">Copywriting</p>
+				<div class="col-sm-6">
+					<a href="{{ post.url }}"><img src="img/target-seo.png" class="img-responsive center-block"></a>
+				</div>
+				<div class="hidden-xs col-sm-6">
+					<a href="{{ post.url }}"><img src="img/walmart-seo.png" class="img-responsive center-block"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<p class="h3 text-center"><a href="{{ post.url }}">Lodge Design</a></p>
+					<p>Since the spring of 2014 I have been contracted by <a href="http://www.lodgedesign.com" target="_blank">Lodge Design</a> to assist with uploading products to target.com, walmart.com, and staples.com. I have worked on the back end of each of these enormous e-commerce systems to upload thousands of new products. I also work on the front end writing product descriptions for SEO and developing consumer facing content</a>... <a href="{{ post.url }}">&raquo;More</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

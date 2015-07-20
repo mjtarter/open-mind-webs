@@ -1,0 +1,346 @@
+/* ==========================================================================
+ 	Style
+   ========================================================================== */
+
+body {
+	font-size:16px;
+	color:black;
+}
+
+ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+a:link, a:visited {
+	color:inherit;
+	text-decoration:none;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+	margin-top: 12px;
+	min-width: 96px;
+	line-height: 36px;
+	padding: 0 18px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px #72100d;
+	background-clip: padding-box;
+	border: 1px solid;
+	border-color: #1c65b2 #18589c #18589c;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+
+.button-large {
+	line-height: 50px;
+	font-size: 22px;
+}
+
+.aqua-button {
+    background-color: #00ced1;
+}
+
+    .aqua-button:hover {
+        background-color:tan;
+        color:white;
+    }
+
+.orange-button {
+    background-color: orange;
+}
+
+    .orange-button:hover {
+        background-color:tan;
+        color:white;
+    }
+
+.black-button {
+    background-color: black;
+}
+
+    .black-button:hover {
+        background-color:tan;
+        color:white;
+    }
+
+.modal label {
+    width:110px;
+}
+
+.modal textarea {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-content {
+    background-image: url('../img/tan-fade-bg.png');
+    background-size:100% 100%;
+}
+
+.carousel {
+	/*Fixes flickering text on entire page during slide transitions */
+	position:relative; 
+	z-index:1000
+}
+
+.jumbotron {
+	margin-bottom:0px;
+}
+
+	.jumbotron .h1 {
+		font-size:36px;
+	}
+/* ==========================================================================
+ 	Helper Classes
+   ========================================================================== */
+
+.m-0 {
+	margin:0px;
+}
+
+.m-vert-20 {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.p-vert-5 {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.p-vert-10 {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.p-vert-35 {
+	padding-top:35px;
+	padding-bottom:35px;
+}
+
+.p-vert-50 {
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.p-top-15 {
+	padding-top:15px;
+}
+
+.p-hor-10 {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.inline-block {
+	display:inline-block;
+}
+
+.vert-middle {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.no-float {
+	float:none;
+}
+
+/* ==========================================================================
+ 	Nav
+   ========================================================================== */
+
+#main-nav {
+	background-color:orange;
+	width:100%;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+
+#header-slogan {
+	float:right;
+}
+
+/* Mobile nav */
+.slicknav_menu {
+	display:none;
+}
+
+.js #menu {
+	height:120px;
+	float:right;
+}
+
+	.js #menu li {
+		font-size:1.3em;
+		display:inline-block;
+		padding:47px 0px;
+		text-align:center;
+		min-width:110px;
+	}
+
+		.js #menu li a:hover:before {
+			font-family:"Glyphicons Halflings";
+			margin-right:5px;
+			text-align:center;
+			line-height:1;
+			display:inline-block;
+		}
+
+		.js #menu li:nth-child(1) a:hover:before {
+			content:"\e021";
+		}
+
+		.js #menu li:nth-child(2) a:hover:before {
+			content:"\e086";
+		}
+
+		.js #menu li:nth-child(3) a:hover:before {
+			content:"\e135";
+		}
+
+		.js #menu li:nth-child(4) a:hover:before {
+			content:"\e111";
+		}
+
+		.js #menu li:nth-child(5) a:hover:before {
+			content:"\e139";
+		}
+
+		.js #menu a:hover {
+			border-bottom:2px solid black;
+		}
+
+/* ==========================================================================
+ 	Footer
+   ========================================================================== */
+
+#footer {
+	background:url('../img/orange-cube-design.png'); 
+	border-top:3px solid black;
+}
+
+	#footer a:hover {
+		color:gray;
+		text-decoration:underline;
+	}
+
+#footer ul li {
+	font-size:1.25em;
+	float:left; 
+	width:50%;
+}
+
+#footer .button {
+	margin:0px; 
+	border-radius:25px
+}
+
+#copyright {
+	width:100%; 
+	background:black; 
+	color:white; 
+	border-top:1px solid white;
+}
+
+#footer-title {
+	margin-top:0px;
+	font-size:1.8em;
+}
+
+/* ==========================================================================
+ 	Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 991px) {
+
+	#logo {
+		text-align:center;
+	}
+
+	#header-img {
+		float:left;
+	}
+
+	#header-slogan {
+		float:left;
+		padding-left:10px;
+	}
+
+	.js #menu {
+		text-align:center;
+		height:60px;
+		clear:both;
+		float:none;
+	}
+
+		.js #menu li {
+			padding:5px 0px 10px 0px;
+			min-width:125px;
+		}
+
+	#footer .container {
+		width:100%;
+		margin:0 auto;
+	}
+
+	#footer ul li {
+		font-size:1.2em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* #menu is the original menu */
+	.js #menu, #main-nav {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+		background-color:orange;
+		border-top:3px solid black;
+		border-bottom:3px solid black;
+	}
+
+		.slicknav_menu li a:hover {
+			background-color:black;
+			color:white;
+		}
+
+	body {
+        font-size:14px;
+    }
+
+    .checkbox-inline {
+    	width:46%;
+    	float:left;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+	#footer ul li {
+			font-size:1.9em;
+		}
+
+	.hide-mobile {
+		display:none;
+	}
+
+	.checkbox-inline {
+    	width:96%;
+    }
+}

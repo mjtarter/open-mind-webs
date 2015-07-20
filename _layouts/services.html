@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="main-content services-template">
+	<div class="container p-vert-50">
+		<div class="col-sm-push-8 col-sm-4">
+			<form name="services-dropdown" class="visible-xs text-center">
+				<p class="title h4">Services:
+				<select id="services" style="width:90%;" name="menu" onChange="top.location.href = this.form.menu.options[this.form.menu.selectedIndex].value;return false;">
+					<option value="{{ page.url }}">{{ page.service.name }}</option>
+					<option value="web-development.html">Web Development</option>
+					<option value="web-design.html">Web Design</option>
+					<option value="database-management.html">Database Management</option>
+					<option value="seo.html">Copywriting / SEO</option>
+					<option value="e-commerce.html">E-commerce</option>
+				</select></p>
+			</form>
+			<ul class="hidden-xs" id="services">
+				<li class="title h3 m-0">Services</li>
+				<a href="web-development.html"><li {% if page.url == '/services/web-development.html' %} class="active" {% else %} id="link-1" onMouseOver='bgChange("link-1")' onMouseOut='bgChangeBack("link-1");' {% endif %} >Web Development</li></a>
+				<a href="web-design.html"><li {% if page.url == '/services/web-design.html' %} class="active" {% else %} id="link-2" onMouseOver='bgChange("link-2")' onMouseOut='bgChangeBack("link-2");' {% endif %} >Web Design</li></a>
+				<a href="database-management.html"><li {% if page.url == '/services/database-management.html' %} class="active" {% else %} id="link-3" onMouseOver='bgChange("link-3")' onMouseOut='bgChangeBack("link-3");' {% endif %} >Database Management</li></a>
+				<a href="seo.html"><li {% if page.url == '/services/seo.html' %} class="active" {% else %} id="link-4" onMouseOver='bgChange("link-4")' onMouseOut='bgChangeBack("link-4");' {% endif %} >Copywriting / SEO</li></a>
+				<a href="e-commerce.html"><li {% if page.url == '/services/e-commerce.html' %} class="active" {% else %} id="link-5" onMouseOver='bgChange("link-5")' onMouseOut='bgChangeBack("link-5");' {% endif %} >E-commerce</a>
+				<a href="analytics.html"><li {% if page.url == '/services/analytics.html' %} class="active" {% else %} id="link-6" onMouseOver='bgChange("link-6")' onMouseOut='bgChangeBack("link-6");' {% endif %} >Analytics</li></a>
+			</ul>
+		</div>
+		<div class="col-sm-pull-4 col-sm-8">
+			<h1 class="m-0 text-center"><img src="{{ page.icon_url }}" class="hidden-xs">{{ page.service.name }}</h1>
+			{{ content }}
+			<button onclick="window.location.href='/contact.html'" style="display:block;" class="button lg-button orange-button center-block m-vert-20">Get Started Now</button>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,47 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.page-content-container {width:98%;
+padding:0 1%;
+max-width:960px;
+margin:6em auto 0 auto;}
+
+.title-box {
+	width:50%;
+	margin-top:2.5em;
+	margin-bottom:1em;
+	max-width:490px;
+	min-width:230px;
+	font-size:3em;
+	padding:0;
+	margin-right:auto;
+	margin-left:auto;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:blue;
+	box-shadow: 10px 10px 5px white;
+}  
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   
+@media only screen and (min-width: 550px)  {
+	
+	.footer, .push {
+		height: 4em;
+	}	
+}
+

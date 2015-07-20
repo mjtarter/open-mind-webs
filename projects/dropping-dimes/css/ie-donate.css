@@ -1,0 +1,265 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.top-story-wide-screen-bg {position:absolute; width:100%; height:503px; background-color:silver;}
+
+.top-story-wrapper {
+	background-image:url(/ie-aba-all-star-lineup.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	margin:64px auto 0px auto; 
+	height:500px;
+	width:100%;
+	max-width:1800px;
+	position:relative;
+	border-bottom:3px solid black;
+	display:table;
+}
+
+#top-title-text {
+	font-size:4.5em; 
+	font-weight:bolder; 
+	margin:0;
+}
+
+#top-pic-text {
+	display:block;
+}
+
+.top-story-content-wrapper {
+	width:100%;
+	max-width:1000px;
+	margin: 0 auto;
+	display:table-cell;
+	background-color:rgba(255,0,0,0.16);
+	vertical-align:middle;
+	color:white;
+	text-align:center;
+}
+
+.top-story-desc {
+	width:96%;
+	padding:0 2%;
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	background-color:rgba(255,0,0,0.74);
+	color:white;
+}
+
+#more-mission-text{display:inline;}	
+
+.why-donate-wrapper {
+	width:100%;
+	display:block;
+	max-width:1000px;
+	margin:1em auto 3em auto;
+}
+
+.why-donate-text {
+	display:inline-block;
+	width:45%;
+	text-align:center;
+	padding-right:3%;
+	padding-top:25px;
+	float:left;
+	padding-left:1%;
+}	
+
+.why-donate-image {
+	display:inline-block;
+	text-align:center;
+	float:right;
+	width:48%;
+	padding-top:25px;
+	vertical-align:middle;
+	font-size:.8em;
+}
+
+.title-box {
+	max-width:490px;
+	min-width:230px;
+	font-size:2em;
+	padding:0;
+	margin:1em auto 0 auto;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:blue;
+	box-shadow: 10px 10px 5px white;
+} 
+
+.donate-wrapper {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	display:table;
+	clear:both;
+}
+
+.button {
+	display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    margin-top:1.6em;
+    line-height: 46px;
+	min-width:1em;
+    padding: 0px 41px;
+    font-size: 18px;
+    font: Lucida Grande, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+
+.button-red {
+  text-shadow: 0 1px #72100d;
+  background-color: red;
+}
+
+.button-red:hover,
+.button-bronze:hover {
+  background-color: blue;
+}
+
+.button-red:active {
+  text-shadow: 0 -1px #72100d;
+  background: #b61a15;
+  border-color: #5b0d0b #72100d #9f1713;
+  background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+  background-image: -moz-linear-gradient(top, #921511, #e4201b);
+  background-image: -o-linear-gradient(top, #921511, #e4201b);
+  background-image: linear-gradient(to bottom, #921511, #e4201b);
+}
+
+.donate {
+	width:47%;
+	text-align:center;
+	padding-top:1em;
+	padding-left:10px;
+	padding-bottom:1em;
+	margin-right:auto;
+	margin-left:auto;
+	padding-right:10px;
+	font-size:18px;
+	margin-top:2em;
+	float:left;
+	color:white;
+	border-radius:25px;
+    background-image:url(/rgba-black.png);
+	box-shadow: 
+        0pt 2px 5px rgba(105, 108, 109,  0.7),  
+        0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+
+.donor-info {
+	width:47%;
+	padding-top:1em;
+	margin-top:2em;
+	padding-left:10px;
+	margin-left:auto;
+	padding-top:1em;
+	margin-right:auto;
+	padding-right:10px;
+	padding-bottom:1em;
+	font-size:18px;
+	color:white;
+	float:right;
+	border-radius:25px;
+    background-image:url(/rgba-black.png);
+    box-shadow: 
+        0pt 2px 5px rgba(105, 108, 109,  0.7),  
+        0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+
+.sponsor-wrapper {
+	width:98%;
+	max-width:1000px;
+	margin:0 auto;
+	padding-top:3em;
+	padding-left:1%;
+	padding-right:1%;
+	display:table;
+	clear:both;
+}
+	
+#sponsor-text {
+		width:80%; 
+		margin:2.3em auto 0 auto;
+}
+
+#paypal-button{max-width:420px;}
+
+.donate-background {
+	background-image:url(/images/aba-game.jpg);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	display:table;
+	padding-bottom:8em;
+	width:100%;
+	padding-top:.5em;
+	color:white;
+	box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  
+        		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+
+.footer-bg {
+	margin-top:0px;
+}
+
+.donate-title {
+	width:100%; 
+	height:75px; 
+	background-color:red; 
+	display:table; 
+	color:white; 
+	max-width:1650px;
+	margin-right:auto;
+	margin-left:auto;
+	font-size:40px; 
+	text-align:center; 
+	border-radius:10px;
+}
+
+#top-button {
+	margin-right:2em;
+}
+
+.poem-image {margin-bottom:80px; margin-top:0; padding-top:20px;}

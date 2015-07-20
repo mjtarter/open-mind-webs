@@ -1,0 +1,795 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+img {
+	max-width:100%;
+	max-height:100%;
+	margin: 0 auto;
+} 
+
+body {	
+	font-family:"sans-serif";
+	background-image:url(/images/bg.jpg); 
+	font-size:18px;
+	min-width:1050px;
+}
+
+#hardship-img,
+#mobile-nav-icon,
+#collage-text, {
+	display:none;
+}
+
+ul#navigation {
+	margin: 0; padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	float: right;
+	width: 40%;
+	min-width:520px;
+	display:table-cell;
+	list-style: none; 
+	height:100%;
+	font-size: 1.1875em;
+	font-family:"sans-serif";
+}
+
+	ul#navigation li {
+		float: right;
+		margin-left: 0; 
+		padding: .9em .6em .9em .6em;
+	}
+
+ul#navigation li a {
+	display: block;
+	text-decoration: none;
+	color:white;
+}
+
+	ul#navigation li:hover {
+		background: red url(topnav_active.gif) repeat-x;
+		color:blue;
+	}
+
+.header {
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	min-width:1050px;
+	float:left;
+	font-size:16px;
+	z-index:1;
+	background-color:blue;
+	color:white;
+	border-bottom:black 3px solid;
+	border-top:black solid 3px;
+	height:3.8em;
+}
+
+#header-logo {
+	height:34px;
+}
+
+#footer-logo {
+	height:68px;
+}
+
+.header-content-container {
+	width:98%;
+	max-width:980px;
+	min-width:14em;
+	margin-left:auto;
+	margin-right:auto;
+	display:table;
+	padding-left:2%;
+}
+
+.mobile-nav-menu {
+	display:none;
+}
+	
+ul#nav {
+	width:50%;
+	position:absolute;
+	display:block;
+	right:0px;
+	top:1.95em;
+}
+	
+#nav li {
+	width:100%;
+	border-right:none;
+	text-align:center;
+	list-style:none;
+}
+		
+#nav li a {
+	display: block;
+	width:80%;  
+	background:blue;
+	border:1px solid white;
+	padding:4% 10%;
+	font-size:1em;
+	color:white;
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	background-color:red;
+}
+	
+p#header-name {
+	float:left; 
+	padding:.7em 0em; 
+	margin:0; 
+	width:250px;
+	font-size:1.3em; 
+	font-family: 'Droid Serif', serif;
+}
+	
+p#collage-text {
+	font-size:1.5em; 
+	margin:.5em; 
+	display:block;
+	width:690px; 
+	margin-right:auto; 
+	margin-left:auto;
+}
+
+#collage-button {
+		margin-right:1.3em; 
+		margin-left:1.3em;
+	}
+
+.collage-background {
+	background-image:url(/images/collage-bg.jpg); 
+	background-position:center;
+	height:510px;
+	margin-top:65px;
+	width:100%;
+	display:table;
+}
+
+.did-you-know-background {
+	background-position:center;
+	width:100%;
+	background-image:url(/rgba-blue.png);
+	display:table;
+}
+	
+.hardships-background {
+	background-image:url(/rgba-red.png);
+	background-position:center;
+	width:100%;
+	display:table;
+}
+	
+.collage-content-wrapper {
+	display:table-cell;
+	vertical-align:middle;
+	max-width:61.25em;
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	text-align:center;
+}
+
+.aba-img-container {
+	float:left; 
+	height:160px; 
+	width:150px; 
+	border:4px solid gray
+}
+
+.page-container {
+	width:100%;
+	max-width:61.25em;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+.button {
+	display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    margin-top:1.6em;
+    min-width: 6em;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 20px;
+    font: Lucida Grande, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+
+.button2 {
+	display: table;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    margin:1.8em auto 0 auto;
+    line-height: 32px;
+    padding: 0 24px;
+    font-size: 16px;
+    font: Lucida Grande, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+
+.button-red {
+  text-shadow: 0 1px #72100d;
+  background-color: red;
+}
+
+.button-red:hover {
+  background-color: blue;
+}
+
+#did-you-know-text {
+		clear:right; 
+		padding-left:345px;
+	}
+
+.button-red:active {
+  text-shadow: 0 -1px #72100d;
+  background: #b61a15;
+  border-color: #5b0d0b #72100d #9f1713;
+  background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+  background-image: -moz-linear-gradient(top, #921511, #e4201b);
+  background-image: -o-linear-gradient(top, #921511, #e4201b);
+  background-image: linear-gradient(to bottom, #921511, #e4201b);
+}
+
+.hardships-content-wrapper {
+	width:100%;
+	max-width:1500px;
+	margin-right:auto;
+	margin-left:auto;
+	padding: 0 0 1em 0;
+	background-image:url(/images/ie-sonny-dove.png);
+	background-repeat:no-repeat;
+	background-size:30% 100%;
+}
+
+.mission-content-wrapper {
+	width:96%;
+	max-width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0 2%;
+	padding-bottom:40px;
+}
+ 
+.success-content-wrapper {
+	width:100%;
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0 0% 2em 0%;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.did-you-know-content-wrapper {
+	width:100%;
+	max-width:1500px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:1em;
+	padding: 0 0 1em 0;
+	background-image:url(/images/ie-bob-netolicky.png);
+	background-repeat:no-repeat;
+	background-size:30% 100%;
+}
+
+.success-container {
+	width:100%;
+	text-align:center;
+	padding-top:1em;
+	clear:both;
+	display:table;}  
+
+.title-box, .title-box-3 {
+	width:50%;
+	margin-top:.8em;
+	margin-bottom:.8em;
+	max-width:490px;
+	min-width:270px;
+	font-size:2.4em;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:blue;
+	box-shadow: 10px 10px 5px white;
+} 
+
+.title-box {
+		float:right;
+	}
+	
+	.title-box-3 {
+		float:left;
+	} 
+
+.title-box-1 {
+	margin-top:.8em;
+	margin-bottom:0;
+	max-width:490px;
+	min-width:270px;
+	font-size:2.4em;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:blue;
+	box-shadow: 10px 10px 5px white;
+}  
+
+p#mission-text {
+	margin-top:2em;
+	display:inline-block;
+}
+
+#mission-mobile-text {
+	display:none;
+}
+
+#hardships-more-text {
+		display:none;
+	}
+
+p#hardships-text {
+	clear:right;
+	padding-left:345px;
+}
+	
+	.success-middle-col {
+		width:31%;
+		float:left;
+		padding-left:3.5%;
+		padding-right:3.5%;
+	}
+
+	.success-right-col {
+		width:31%;
+		float:right;
+	}
+
+.success-left-col {
+	width:31%;
+	float:left;
+}
+
+	
+.center {
+	margin:0 auto;
+	clear:both;
+	text-align:center;
+}
+	
+.center2 {
+	text-align:center;
+	margin-left:42%;
+}
+	
+.footer-bg {
+	width:100%;
+	min-width:1050px;
+	background-color:blue;
+	border-top:3px solid black;
+	float:left;
+	left:0px;
+	right:0px;
+	position:absolute;
+	margin-top:5em;
+}
+	
+.footer-container {
+	width:100%;
+	max-width:1200px;
+	min-width:1050px;
+	margin:0 auto;
+	padding:1em 0 0 0;
+	font-size:16px;
+}
+
+.all{margin:0 auto;}
+
+
+.footer-col4 {
+		width:20%;
+		text-align:center;
+		display:inline-block;
+		float:left;
+	}
+	
+	.footer-col3 {
+		width:11%;
+		padding-left:5%;
+		text-align:left;
+		display:inline-block;
+		float:left;
+	}
+	
+.footer-col2 {
+		width:30%;
+		display:inline-block;
+		float:left;
+	}
+
+
+	.footer-col1 {
+		width:27%;
+		text-align:left;
+		display:inline-block;
+		padding-left:4.4em;
+		float:left;
+		background-size:4em 4em;
+		background-repeat:no-repeat;
+	}
+
+p#footer-text {
+	padding:0; 
+	margin:0; 
+	font-size:2em; 
+	font-family:'Droid Serif', serif;
+	text-align:left;
+}
+	
+.footer-container a:link {
+	color:black;
+	text-decoration:none;
+}
+
+.footer-container a:visited {
+	color:black;
+} 
+
+.footer-container a:hover {
+	color:red;
+}  
+	
+.copyright {
+	text-align:center;
+	background-color:black;
+	color:white;
+	width:100%;
+	height:2em;
+	padding-top:.3em;
+	font-size:16px;
+	margin-top:1em;
+	display:table;
+	bottom:0;
+	clear:both;
+	float:left;
+}
+
+#mobile-footer-icon {
+	width:45px;
+	padding-right:5px;
+}
+
+#ie-only {
+	padding-left:4em;
+}
+	
+	.success-pics {
+		max-width:100%;
+	}
+	
+h1#collage-header {
+	display:block;
+	font-size:4.4em; 
+	margin:0;
+}
+
+span#hardships-small-button {
+		display:inline-block;
+	}
+
+#hardships-large-button {
+	display:table;
+	margin:.5em auto;
+	text-align:center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }  
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

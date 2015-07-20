@@ -1,0 +1,196 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+a:link {
+	color:black;
+}
+
+.copyright a:link {
+	color:blue;
+}
+
+.page-container {
+	margin:8em auto 2em auto; 
+	width:100%; 
+	max-width:1200px;
+}
+
+.member-container {
+	width:96%; 
+	padding:2% 0 0 2%;
+	display:inline-block; 
+	background-color:silver;
+	background-image: -webkit-linear-gradient(white, silver); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(white, silver); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(white, silver); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(white, silver); /* Standard syntax */			
+	border:2px groove silver; 	
+	box-shadow: 10px 10px 5px gray;
+}
+
+.member-container2, 
+.member-container4 {
+	width:96%; 
+	padding-left:2%; 
+	margin-top:3em;
+	padding-top:2%; 
+	display:inline-block;
+	background-color:silver;
+	background-image: -webkit-linear-gradient(white, silver); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(white, silver); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(white, silver); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(white, silver); /* Standard syntax */		
+	border:2px groove silver; 	
+	box-shadow: 10px 10px 5px gray;
+}
+
+.member-container3 {
+	width:96%; 
+	padding-left:2%; 
+	margin-top:3em;
+	padding-top:2%; 
+	display:inline-block;
+	background-color:silver;
+	background-image: -webkit-linear-gradient(white, silver); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(white, silver); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(white, silver); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(white, silver); /* Standard syntax */		
+	border:2px groove silver; 	
+	box-shadow: 10px 10px 5px gray;
+}
+
+.member-pic {
+	display:block;
+	text-align:center;
+	height:187px;
+	width:149px;
+}
+
+.member-title {
+	text-align:center;
+}
+
+.member-info {
+	display:none;
+}
+
+.page-title {
+	width:80%;
+	min-width:230px;
+	font-size:2em;
+	padding:0;
+	margin-top:1em;
+	margin-bottom:1em;
+	margin-right:auto;
+	margin-left:auto;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:red;
+	box-shadow: 10px 10px 5px white;
+}
+
+#desktop-board{display:none;}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 550px)  {
+
+	.member-container,
+	.member-container3 {
+		width:46%;
+	}
+	
+	.member-container2 {
+		width:46%;
+		margin-top:0;
+	}
+	
+	.member-container4 {
+		width:46%;
+	}
+	
+	.page-title {
+	font-size:3em;
+}}
+
+
+@media only screen and (min-width: 766px)  {
+
+	
+	
+	.member-container,
+	.member-container3 {
+		margin-right:15px;
+		width:345px;
+		padding-bottom:20px;
+		height:282px;		
+		padding-top:20px;
+		
+	}
+		
+	.member-container2, 
+	.member-container4 {
+		width:345px;
+		padding-left:10px;
+		margin-left:10px;
+		padding-bottom:20px;
+		height:282px;		
+		padding-top:20px;
+	}
+	
+	.member-container3 {
+		margin-top:15px;
+	}
+	
+	.member-container4 {
+		margin-top:15px;
+	}
+	
+	.member-pic {
+		float:left; 
+		padding-right:8px;
+	}
+		
+	.member-title {
+		text-align:left;
+		padding-top:0;
+		margin-top:0;
+	}
+	
+	.member-info {
+		display:inline;
+	}
+	
+	#desktop-board {display:table;
+	width:765px;
+	margin:0 auto;}
+	
+	#mobile-board{display:none;}
+}
+@media only screen and (min-width: 970px)  {
+
+.member-container,
+	.member-container3,.member-container2, 
+	.member-container4  {
+		width:460px;
+		height:235px;				
+	}
+	
+#desktop-board {display:table;
+	width:990px;
+	margin:0 auto;}
+}

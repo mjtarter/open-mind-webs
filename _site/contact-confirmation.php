@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> Dropping Dimes | Responsive Website | Portfolio </title>
+    <title>  </title>
         <meta property="og:description" content="Open Mind Webs - The personal site of front end developer, Matt Tarter. Contact me today to obtain your business goals through the web with a professionally developed website!" />
         <meta property="og:image" content="http://openmindwebs.com/img/work-desk.jpg" />        
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,53 +47,140 @@
             </div>
         </nav>
 
-            <section class="main-content p-vert-50 folio-pages">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 no-float" style="display:table-cell;">
-				<p class="h1">Dropping Dimes</p>
-				 
+            <?php
+ 
+if(isset($_POST['email'])) {
+ 
+     
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+ 
+    $email_to = "mjtarter@openmindwebs.com";
+ 
+    $email_subject = "OMW Contact";
+ 
+     
+ 
+     
+ 
+    function died($error) {
+ 
+        // your error code can go here
+ 
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+ 
+        echo "These errors appear below.<br /><br />";
+ 
+        echo $error."<br /><br />";
+ 
+        echo "Please go back and fix these errors.<br /><br />";
+ 
+        die();
+ 
+    }
+ 
+     
+ 
+    // validation expected data exists
+ 
+    if(!isset($_POST['first_name']) ||
+ 
+        !isset($_POST['last_name']) ||
+ 
+        !isset($_POST['email']) ||
 
-				<p><a href="/projects/dropping-dimes/home.html" target="_blank">DroppingDimes.org</a></p> 
+        !isset($_POST['phone']) ||
 
-								
-				<div class="clearfix">
-					<ul id="services-provided">
-					
-						
-						<li><span class="glyphicon glyphicon-ok-sign"></span> Web Development</li>
-					
-					
-						
-						<li><span class="glyphicon glyphicon-ok-sign"></span> Responsive Design</li>
-					
-					
-						
-						<li><span class="glyphicon glyphicon-ok-sign"></span> Web Design</li>
-					
-					
-						
-						<li><span class="glyphicon glyphicon-ok-sign"></span> Content Development / SEO</li>
-					
-					
-						
-						<li><span class="glyphicon glyphicon-ok-sign"></span> E-commerce</li>
-					
-					
-					</ul>
-				</div>
-				<hr>
-				<p>Dropping Dimes is a charitable organization with an aim to assist former ABA basketball players living in economically or medically disadvantaged situations. They came to me when their organization was just being formed with a business plan, and a few paragraphs of content for the website. I was given a lot of freedom during this project and even brought on as a member of the team that helped to influence the direction of the organization. The fully responsive website below is what I delivered.</p>
+        !isset($_POST['comments'])) {
+ 
+        died('We are sorry, but there appears to be a problem with the form you submitted.');         
+ 
+    }
+   
+    $first_name = $_POST['first_name']; // required
+ 
+    $last_name = $_POST['last_name']; // required
+ 
+    $email_from = $_POST['email']; // required
 
-				<img src="/img/dropping-dimes-responsive.png" class="hidden-xs hidden-sm col-md-12 img-responsive center-block p-top-15">
-			</div>
-			<div class="col-sm-6 no-float" id="folio-img-container">
-				<img src="/img/dropping-dimes-page.jpg" id="folio-main-img" class="img-responsive center-block">
-			</div>
-		</div>
-		<!-- If additional content exists include below, If not then end content !-->
-						
-	</div>
+    $phone = $_POST['phone']; // required
+ 
+    $comments = $_POST['comments']; // not required
+
+     
+ 
+    $error_message = "";
+ 
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+ 
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+ 
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+  if(!preg_match($string_exp,$last_name)) {
+ 
+    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+ 
+  if(strlen($error_message) > 0) {
+ 
+    died($error_message);
+ 
+  } 
+     
+ 
+    function clean_string($string) {
+ 
+      $bad = array("content-type","bcc:","to:","cc:","href");
+ 
+      return str_replace($bad,"",$string);
+ 
+    }
+
+
+ 
+    $email_message .= "Name: ".clean_string($first_name). " " .clean_string($last_name)."\n";
+  
+    $email_message .= "Phone: ".clean_string($phone)."\n\n";  
+ 
+    $email_message .= "Comments: ".clean_string($comments)."\n\n";  
+  
+ 
+     
+ 
+// create email headers
+ 
+$headers = 'From: '.$email_from."\r\n".
+ 
+'Reply-To: '.$email_from."\r\n" .
+ 
+'X-Mailer: PHP/' . phpversion();
+ 
+@mail($email_to, $email_subject, $email_message, $headers);  
+ 
+}?>
+ 
+ 
+ 
+<!-- include success html here -->
+
+<section class="main-content p-vert-50 confirmation-body">
+  <div class="container text-center">
+    <p class="h1">Message Sent!</p>
+      <p>Thank you for contacting me! I will be in touch shortly!</p>
+    </div>
 </section>
 
     <footer class="text-center" id="footer">

@@ -1,0 +1,239 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*Global Overwrite*/
+
+   .footer-bg {
+	margin-top:0em;}
+	/*Finish overwrite*/
+.top-story-wrapper {
+	background-image:url(../undefeated-mobile.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	margin:64px auto 0px auto; 
+	height:300px;
+	width:100%;
+	max-width:1400px;
+	position:relative;
+}
+
+.top-story-desc a:link {color:#0099FF;}
+
+.top-story-desc {
+	width:96%;
+	padding:0 2%;
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	background-color:rgba(255,0,0,0.74);
+	color:white;
+}
+
+#more-top-story {
+	display:none;
+}
+
+.aba-life-wrapper {
+	width:96%;
+	padding-left:2%;
+	padding-right:2%;
+	max-width:1188px;
+	margin:0 auto 0 auto;
+}
+
+.title-box {
+	width:50%;
+	max-width:490px;
+	min-width:230px;
+	font-size:2em;
+	padding:0;
+	margin-right:auto;
+	margin-left:auto;
+	color:white;
+	font-weight:bolder;
+	text-align:center;
+	background-color:blue;
+	box-shadow: 10px 10px 5px white;
+} 
+
+.aba-life-content {
+	width:100%;
+	display:inline-block;
+	padding-top:3em;
+}
+
+#more-aba-life {
+	display:none;
+}
+
+.teams {
+	width:100%; 
+	border:2px groove gray;
+	margin-top:3em;
+	margin-bottom:3em;
+	float:right;
+	padding-bottom:2em;
+	background-color:rgba(0,0,0,.2);
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.title {
+	background-color:red;
+	font-size:1.3em;
+	padding:.3em 0;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+}
+
+.bg {	background-image:url(../images/bg.jpg);
+width:100%;
+max-width:1200px;
+margin:0 auto; 
+}
+
+ul#teams {
+	list-style:none; 
+	text-align:center;
+	padding:0; display:block;
+	font-size:.7em;
+	margin-top: 2em;
+}
+
+ul#teams li {
+	float:left; 
+	width:23%;
+	padding:.3em 1%;
+}
+
+.stories-wrapper {
+	width:99%;
+	max-width:1188px;
+	display:block;
+	margin:0 auto 0 auto;
+	padding:4em .5%;
+	text-align:center;
+}
+
+.story-left,
+.story-middle,
+.story-right {
+	width:100%;
+}
+	 
+.team-name {
+	display:none;
+}
+	
+#aba-life-pic { 
+	display:block;
+	text-align:center;
+}
+
+.success-pics{max-width:100%;}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 450px)  {
+
+.top-story-wrapper {
+	background-image:url(../undefeated.jpg);
+}}
+
+@media only screen and (min-width: 766px)  {
+
+	.title-box {
+		min-width:360px;
+	} 
+	
+	.story-left {
+		width:31%;
+		display:inline-block;
+		vertical-align:top;
+	}
+	
+	.story-middle {
+		width:31%;
+		display:inline-block;
+		padding-left:1.2%;
+		padding-right:1.2%;
+		vertical-align:top;
+	}
+	
+	.story-right {
+		width:31%;
+		display:inline-block;
+	}
+	
+	.stories-wrapper{
+	clear:both;}
+	
+	ul#teams li {
+	width:11.885%;
+	padding:.3em 1.2%;
+}
+
+#more-aba-life {
+	display:inline;}
+
+
+.title-box {
+	font-size:3em;
+} 
+
+.top-story-wrapper { 
+	height:500px;
+}
+
+#more-top-story {
+	display:inline}
+	
+.teams {
+margin-bottom:0px;
+}}
+
+@media only screen and (min-width: 1200px)  {
+
+	.team-name {
+		display:inline-block;
+	}
+	
+	.aba-life-content {
+		width:58%;
+		padding-right:2%;
+	}
+	
+	ul#teams li {
+		width:23%;
+		padding:.3em 1%;
+	}
+	
+	.aba-life-wrapper {
+		width:99%;
+		padding:0 .5%;
+	}
+	
+	.logo-clear { 
+		clear:left;
+	}
+	
+	.teams{float:right;
+	width:39%;}
+	
+	.top-story-wide-screen-bg {position:absolute; width:100%; height:500px; background-color:silver;}
+
+}

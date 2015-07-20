@@ -3,7 +3,7 @@ layout: portfolio-entries
 title: Dropping Dimes | Responsive Website | Portfolio
 name: Dropping Dimes
 site_url: DroppingDimes.org
-link: dropping-dimes/home.html
+link: /projects/dropping-dimes/home.html
 img_src: /img/dropping-dimes-responsive.png
 img2_src: /img/dropping-dimes-page.jpg
 permalink: dropping-dimes

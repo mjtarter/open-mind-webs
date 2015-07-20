@@ -9,11 +9,11 @@ layout: default
 				<p class="title h4">Services:
 				<select id="services" style="width:90%;" name="menu" onChange="top.location.href = this.form.menu.options[this.form.menu.selectedIndex].value;return false;">
 					<option value="{{ page.url }}">{{ page.service.name }}</option>
-					<option value="web-development.html">Web Development</option>
-					<option value="web-design.html">Web Design</option>
-					<option value="database-management.html">Database Management</option>
-					<option value="seo.html">Copywriting / SEO</option>
-					<option value="e-commerce.html">E-commerce</option>
+					{% for other_service in page.other_services %}				
+					
+					<option value="{{ other_service.url }}">{{ other_service.service }}</option>
+					
+					{% endfor %}
 				</select></p>
 			</form>
 			<ul class="hidden-xs" id="services">

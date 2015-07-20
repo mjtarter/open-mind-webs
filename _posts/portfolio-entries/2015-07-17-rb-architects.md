@@ -4,7 +4,7 @@ title: R&B Architects | Website | Portfolio
 permalink: r&b-architects
 name: R&B Architects
 site_url: randbarchitects.com
-link: rb-architects
+link: /projects/rb-architects
 img_src: /img/rb-website.png
 img2_src: /img/randb-page.jpg
 category: websites

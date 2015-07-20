@@ -1,5 +1,5 @@
 ---
-layout: default
+title: Message Sent!
 ---
 
 <?php
@@ -22,13 +22,13 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "<section class='main-content p-vert-50 confirmation-body'> We are very sorry, but there were error(s) found with the form you submitted. ";
  
         echo "These errors appear below.<br /><br />";
  
         echo $error."<br /><br />";
  
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "Please go back and fix these errors.</section>";
  
         die();
  
@@ -131,9 +131,13 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include success html here -->
 
+{% include header.html %}
+
 <section class="main-content p-vert-50 confirmation-body">
   <div class="container text-center">
     <p class="h1">Message Sent!</p>
       <p>Thank you for contacting me! I will be in touch shortly!</p>
     </div>
 </section>
+
+{% include footer.html %}

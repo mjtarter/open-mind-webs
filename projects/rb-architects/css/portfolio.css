@@ -1,0 +1,50 @@
+.main-image {
+    float:left; 
+    border:1px solid #bd5e1b; 
+    width:668px;
+}
+
+.top-right-image {
+    display:inline-block; 
+    height:164px; 
+    width:289px; 
+    border-top:1px solid #bd5e1b; 
+    border-right:1px solid #bd5e1b;
+}
+
+.bottom-right-image {
+    display:inline-block; 
+    height:164px; 
+    width:289px; 
+    border-top:1px solid #bd5e1b; 
+    border-right:1px solid #bd5e1b; 
+    border-bottom:1px solid #bd5e1b;"
+}
+
+.project-description-title {
+    text-align:center; 
+    font-size:22px; 
+    font-weight:bold;
+}
+
+.description-container {
+    display:inline-block; 
+    vertical-align:top; 
+    clear:both; 
+    width:665px;
+}
+
+.basic-info-container {
+    display:inline-block; 
+    font-size:15px; 
+    width:265px; 
+    margin:0; 
+    padding:7px; 
+    border-left:dotted 2px #bd5e1b; 
+    border-bottom:dashed 2px #bd5e1b;"
+}
+
+.basic-info-plus-sign {
+    font-size:1.6em; 
+    color:gray;
+}

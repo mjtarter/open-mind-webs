@@ -3,7 +3,7 @@ layout: portfolio-entries
 title: Tarter Bros Staining | Website | Portfolio
 name: Tarter Bros Staining
 site_url: TarterBrosStaining.com
-link: tarter-bros/home.html
+link: /projects/tarter-bros/home.html
 img_src: /img/tarter-bros-website.png
 img2_src: /img/tarter-bros-page.jpg
 permalink: tarter-bros-staining

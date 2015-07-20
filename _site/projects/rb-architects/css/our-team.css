@@ -1,0 +1,10 @@
+.img-style {
+    float:left; 
+    border:1px solid black; 
+    margin-right:15px;
+}
+
+.name-style{
+    display:block; 
+    text-align:center;
+}

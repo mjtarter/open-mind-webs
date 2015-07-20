@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.top-section {
+	width:100%;
+	max-width:2000px;
+	position:relative;
+	display:table;
+	background:url('/images/blueprint-2-ie.jpg');
+	margin-right:auto;
+	margin-left:auto;
+	height:280px;
+	background-size:cover;
+	margin-top:120px;
+	border-bottom:3px solid black;
+}
+
+li.box-list:hover .box-list-title{
+	background-color:gray; 
+}
+
+li.box-list {
+	float:left; 
+	width:29.5%; 
+	background-image:url('/images/building1-ie.png');
+	background-size:cover; 
+	height:200px;
+    opacity: 0.9; 
+	border:2px solid black;
+} 
+
+#image-two {
+	background-image:url('/images/building-ie.png');
+}
+
+p.box-list-title {
+	text-align:center; 
+	margin-top:15%; 
+	margin-bottom:15px;
+	width:80%; 
+	margin-right:auto; 
+	margin-left:auto; 
+	background-color:black; 
+	color:white; 
+	font-size:2em;
+}
+
+.footer {
+	width:100%;
+	height:177px;
+	clear:both;
+	margin-top:50px;
+	background-image:url('/images/blueprint-2-ie.jpg');
+	background-size:100%;
+	border-top:3px solid #A8A8A8;
+	border-bottom:3px solid #A8A8A8;
+	color:#E0E0E0;
+}
+
+.ie {
+	width:98%;
+}

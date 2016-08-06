@@ -50,14 +50,14 @@ title: Portfolio | Web Design | Marketing
 			{% for post in site.categories.websites %}
   				{% assign loopindex = forloop.index | modulo: 2 %}
   				{% if loopindex == 1 %}
-				
+
 			<div class="row">
 				<div class="col-sm-6">
 					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
 					<p class="h3 text-center"><a href="{{ post.url }}"> {{ post.name }} </a></p>
 					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
 				</div>
-				
+
 			{% else %}
 
 				<div class="col-sm-6">
@@ -66,7 +66,7 @@ title: Portfolio | Web Design | Marketing
 					<p> {{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
 				</div>
 			</div>
-  
+
   			{% endif %}
 			{% endfor %}
 		</div>
@@ -77,7 +77,7 @@ title: Portfolio | Web Design | Marketing
 			{% for post in site.categories.database-management %}
   				{% assign loopindex = forloop.index | modulo: 2 %}
   				{% if loopindex == 1 %}
-  			
+
   			<div class="row">
 				<div class="col-sm-6">
 					<a href="{{ post.url }}"><img src="{{ post.img_src }}" class="img-responsive center-block"></a>
@@ -93,7 +93,7 @@ title: Portfolio | Web Design | Marketing
 					<p>{{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
 				</div>
 			</div>
-			
+
 			{% endif %}
 			{% endfor %}
 		</div>
@@ -115,7 +115,7 @@ title: Portfolio | Web Design | Marketing
 				<div class="col-md-8 col-md-offset-2">
 					<p class="h3 text-center"><a href="{{ post.url }}">{{ post.name }}</a></p>
 					<p>{{ post.description }} &nbsp;<a href="{{ post.url }}">&raquo;More</a></p>
-				
+
 				{% endfor %}
 				</div>
 			</div>

@@ -2,9 +2,9 @@
 
 My web development company website. This site is fully responsive and showcases my services, testimonials, portfolio, and more.
 
-# Development
+## Development
 
-This website uses HTML, CSS, and JS, built on the bootstrap framework.
+Website uses HTML, CSS, and JS, built on the bootstrap framework and is compiled with jekyll.
 
 ## Features
 
